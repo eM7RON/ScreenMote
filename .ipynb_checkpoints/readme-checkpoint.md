@@ -7,24 +7,24 @@ It was built to be used for my own purposes but may be useful to anyone with the
 
 ### Requirements
 
-Raspberry Pis should be either version 3B or 3B+
-Windows/Linux (Mac untested)
-Python 3
+Raspberry Pis should be either version 3B or 3B+  
+Windows/Linux (Mac untested)  
+Python 3  
 
 #### Python environment
 
 Untill a docker container is setup run commands:
 
-`pip install paramiko`
-`pip install keyboard`
-`pip install pyqt5`
-`pip install gspread`
-`pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib`
-`pip install oauth2client`
+`pip install paramiko`  
+`pip install keyboard` 
+`pip install pyqt5`  
+`pip install gspread`  
+`pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib`  
+`pip install oauth2client`  
 
 On Linux it may be preferable to use `pip3` if this accesses python3 version of pip
 
-`sudo apt install python3-pyqt5`
+`sudo apt install python3-pyqt5`  
 may be required on linux if facing "Could not load the Qt platform plugin "xcb"" problem
 
 #### Raspberry Pi setup
