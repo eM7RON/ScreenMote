@@ -1,0 +1,328 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'main_window.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(400, 409)
+        MainWindow.setMinimumSize(QtCore.QSize(400, 409))
+        MainWindow.setMaximumSize(QtCore.QSize(400, 409))
+        self.horizontalLayout = QtWidgets.QHBoxLayout(MainWindow)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.tabWidget = QtWidgets.QTabWidget(MainWindow)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.tab_3)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_4.setSizeConstraint(QtWidgets.QLayout.SetMinimumSize)
+        self.verticalLayout_4.setSpacing(4)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.name_label = QtWidgets.QLabel(self.tab_3)
+        self.name_label.setMinimumSize(QtCore.QSize(0, 19))
+        self.name_label.setMaximumSize(QtCore.QSize(16777215, 19))
+        self.name_label.setObjectName("name_label")
+        self.horizontalLayout_15.addWidget(self.name_label)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_15)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.name_line_edit = QtWidgets.QLineEdit(self.tab_3)
+        self.name_line_edit.setToolTip("")
+        self.name_line_edit.setToolTipDuration(-1)
+        self.name_line_edit.setWhatsThis("")
+        self.name_line_edit.setText("")
+        self.name_line_edit.setMaxLength(88)
+        self.name_line_edit.setObjectName("name_line_edit")
+        self.horizontalLayout_5.addWidget(self.name_line_edit)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_5)
+        self.horizontalLayout_23 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.url_label = QtWidgets.QLabel(self.tab_3)
+        self.url_label.setMinimumSize(QtCore.QSize(0, 19))
+        self.url_label.setMaximumSize(QtCore.QSize(16777215, 19))
+        self.url_label.setObjectName("url_label")
+        self.horizontalLayout_23.addWidget(self.url_label)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_23)
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.url_line_edit = QtWidgets.QLineEdit(self.tab_3)
+        self.url_line_edit.setObjectName("url_line_edit")
+        self.horizontalLayout_10.addWidget(self.url_line_edit)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_10)
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.time_label = QtWidgets.QLabel(self.tab_3)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.time_label.sizePolicy().hasHeightForWidth())
+        self.time_label.setSizePolicy(sizePolicy)
+        self.time_label.setMinimumSize(QtCore.QSize(120, 0))
+        self.time_label.setMaximumSize(QtCore.QSize(120, 16777215))
+        self.time_label.setObjectName("time_label")
+        self.horizontalLayout_11.addWidget(self.time_label)
+        self.n_slide_spin_box = QtWidgets.QSpinBox(self.tab_3)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(
+            self.n_slide_spin_box.sizePolicy().hasHeightForWidth()
+        )
+        self.n_slide_spin_box.setSizePolicy(sizePolicy)
+        self.n_slide_spin_box.setMinimumSize(QtCore.QSize(100, 0))
+        self.n_slide_spin_box.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.n_slide_spin_box.setMinimum(1)
+        self.n_slide_spin_box.setMaximum(999)
+        self.n_slide_spin_box.setProperty("value", 1)
+        self.n_slide_spin_box.setObjectName("n_slide_spin_box")
+        self.horizontalLayout_11.addWidget(self.n_slide_spin_box)
+        spacerItem = QtWidgets.QSpacerItem(
+            115, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
+        self.horizontalLayout_11.addItem(spacerItem)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_11)
+        self.horizontalLayout_24 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
+        self.add_asset_button = QtWidgets.QPushButton(self.tab_3)
+        self.add_asset_button.setObjectName("add_asset_button")
+        self.horizontalLayout_24.addWidget(self.add_asset_button)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_24)
+        self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
+        self.asset_table = QtWidgets.QTableWidget(self.tab_3)
+        self.asset_table.setEnabled(True)
+        self.asset_table.setMinimumSize(QtCore.QSize(0, 100))
+        self.asset_table.setMaximumSize(QtCore.QSize(378, 100))
+        self.asset_table.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.asset_table.setSizeAdjustPolicy(
+            QtWidgets.QAbstractScrollArea.AdjustIgnored
+        )
+        self.asset_table.setAutoScroll(False)
+        self.asset_table.setAutoScrollMargin(500)
+        self.asset_table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.asset_table.setAlternatingRowColors(True)
+        self.asset_table.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+        self.asset_table.setTextElideMode(QtCore.Qt.ElideRight)
+        self.asset_table.setVerticalScrollMode(
+            QtWidgets.QAbstractItemView.ScrollPerPixel
+        )
+        self.asset_table.setHorizontalScrollMode(
+            QtWidgets.QAbstractItemView.ScrollPerPixel
+        )
+        self.asset_table.setColumnCount(3)
+        self.asset_table.setObjectName("asset_table")
+        self.asset_table.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.asset_table.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.asset_table.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.asset_table.setHorizontalHeaderItem(2, item)
+        self.asset_table.horizontalHeader().setDefaultSectionSize(125)
+        self.asset_table.horizontalHeader().setStretchLastSection(True)
+        self.horizontalLayout_25.addWidget(self.asset_table)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_25)
+        self.horizontalLayout_26 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_26.setObjectName("horizontalLayout_26")
+        spacerItem1 = QtWidgets.QSpacerItem(
+            2, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum
+        )
+        self.horizontalLayout_26.addItem(spacerItem1)
+        self.delete_check_box = QtWidgets.QCheckBox(self.tab_3)
+        self.delete_check_box.setChecked(True)
+        self.delete_check_box.setObjectName("delete_check_box")
+        self.horizontalLayout_26.addWidget(self.delete_check_box)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            73, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum
+        )
+        self.horizontalLayout_26.addItem(spacerItem2)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_26)
+        self.horizontalLayout_28 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_28.setObjectName("horizontalLayout_28")
+        self.update_button = QtWidgets.QPushButton(self.tab_3)
+        self.update_button.setObjectName("update_button")
+        self.horizontalLayout_28.addWidget(self.update_button)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_28)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
+        self.verticalLayout_4.addItem(spacerItem3)
+        self.horizontalLayout_29 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_29.setObjectName("horizontalLayout_29")
+        self.update_status_label = QtWidgets.QLabel(self.tab_3)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(
+            self.update_status_label.sizePolicy().hasHeightForWidth()
+        )
+        self.update_status_label.setSizePolicy(sizePolicy)
+        self.update_status_label.setMinimumSize(QtCore.QSize(154, 19))
+        self.update_status_label.setMaximumSize(QtCore.QSize(154, 19))
+        self.update_status_label.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
+        self.update_status_label.setObjectName("update_status_label")
+        self.horizontalLayout_29.addWidget(self.update_status_label)
+        spacerItem4 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
+        self.horizontalLayout_29.addItem(spacerItem4)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_29)
+        self.horizontalLayout_3.addLayout(self.verticalLayout_4)
+        self.horizontalLayout_4.addLayout(self.horizontalLayout_3)
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_4 = QtWidgets.QWidget()
+        self.tab_4.setObjectName("tab_4")
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout(self.tab_4)
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        spacerItem5 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout.addItem(spacerItem5)
+        self.reboot_button = QtWidgets.QPushButton(self.tab_4)
+        self.reboot_button.setObjectName("reboot_button")
+        self.verticalLayout.addWidget(self.reboot_button)
+        self.shutdown_button = QtWidgets.QPushButton(self.tab_4)
+        self.shutdown_button.setObjectName("shutdown_button")
+        self.verticalLayout.addWidget(self.shutdown_button)
+        spacerItem6 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
+        self.verticalLayout.addItem(spacerItem6)
+        self.horizontalLayout_31 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_31.setObjectName("horizontalLayout_31")
+        self.power_status_label = QtWidgets.QLabel(self.tab_4)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(
+            self.power_status_label.sizePolicy().hasHeightForWidth()
+        )
+        self.power_status_label.setSizePolicy(sizePolicy)
+        self.power_status_label.setMinimumSize(QtCore.QSize(154, 19))
+        self.power_status_label.setMaximumSize(QtCore.QSize(154, 19))
+        self.power_status_label.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
+        self.power_status_label.setObjectName("power_status_label")
+        self.horizontalLayout_31.addWidget(self.power_status_label)
+        spacerItem7 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
+        self.horizontalLayout_31.addItem(spacerItem7)
+        self.verticalLayout.addLayout(self.horizontalLayout_31)
+        self.horizontalLayout_8.addLayout(self.verticalLayout)
+        self.horizontalLayout_7.addLayout(self.horizontalLayout_8)
+        self.tabWidget.addTab(self.tab_4, "")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.tab)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.host_table = QtWidgets.QTableWidget(self.tab)
+        self.host_table.setSizeAdjustPolicy(
+            QtWidgets.QAbstractScrollArea.AdjustToContents
+        )
+        self.host_table.setColumnCount(4)
+        self.host_table.setObjectName("host_table")
+        self.host_table.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.host_table.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.host_table.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.host_table.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.host_table.setHorizontalHeaderItem(3, item)
+        self.verticalLayout_5.addWidget(self.host_table)
+        self.horizontalLayout_6.addLayout(self.verticalLayout_5)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_6)
+        self.verticalLayout_3.addLayout(self.verticalLayout_2)
+        self.tabWidget.addTab(self.tab, "")
+        self.horizontalLayout_2.addWidget(self.tabWidget)
+        self.horizontalLayout.addLayout(self.horizontalLayout_2)
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "SreenMote"))
+        self.name_label.setText(_translate("MainWindow", "Asset name"))
+        self.url_label.setText(_translate("MainWindow", "Asset URL"))
+        self.time_label.setText(_translate("MainWindow", "Number of slides"))
+        self.add_asset_button.setText(_translate("MainWindow", "Add Asset"))
+        item = self.asset_table.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Name"))
+        item = self.asset_table.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "#Slides"))
+        item = self.asset_table.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "URL"))
+        self.delete_check_box.setText(_translate("MainWindow", "Delete old assets"))
+        self.update_button.setText(_translate("MainWindow", "Execute update"))
+        self.update_status_label.setText(_translate("MainWindow", "Not Ready"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "Update")
+        )
+        self.reboot_button.setText(_translate("MainWindow", "Reboot"))
+        self.shutdown_button.setText(_translate("MainWindow", "Shutdown"))
+        self.power_status_label.setText(_translate("MainWindow", "Not Ready"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "Power")
+        )
+        item = self.host_table.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Selected"))
+        item = self.host_table.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "ID"))
+        item = self.host_table.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Mac"))
+        item = self.host_table.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "IPV4"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Hosts")
+        )
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QWidget()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
