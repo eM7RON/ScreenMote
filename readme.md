@@ -16,7 +16,7 @@ Python 3
 Untill a docker container is setup run commands:
 
 `pip install paramiko`  
-`pip install keyboard` 
+`pip install keyboard`  
 `pip install pyqt5`  
 `pip install gspread`  
 `pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib`  
