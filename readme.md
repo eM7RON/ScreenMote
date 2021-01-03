@@ -39,7 +39,7 @@ Power up the Pis and change their names on the network using the format 'okr_pi_
 
 To work, a json file (named client_secrets.json) containing secret keys from a Google Cloud account with Drive, Sheets and Docs APIs enabled should be placed in the data directory.
 
-The Google Cloud account should have a Google Sheets file named `host_data` (located at `MyDrive/OKRs/host_data`) with columns `#`, `Mac` and `IPV4` which denote a number (en of unique namnes we added earlier), mac address and IPV4 address. IPV4 entries may contain `None` if the IPV4 addresses are not static on the network. When IPV4s are not static the software will attempt to autonomously find the Raspberry Pis on the network by looking for mac addresses and then unique names. This feature is currently only available on Windows.
+The Google Cloud account should have a Google Sheets file named `host_data` (located at `MyDrive/OKRs/host_data`) with columns `#`, `Mac` and `IPV4` which denote a number (one of the unique namnes we added earlier), mac address and IPV4 address. IPV4 entries may contain `None` if the IPV4 addresses are not static on the network. When IPV4s are not static the software will attempt to autonomously find the Raspberry Pis on the network by looking for mac addresses and then unique names. This feature is currently only available on Windows.
 
 A Google Docs file at `MyDrive/OKRs/pw` should contain a sha256 hash of the Raspberry Pi's SSH password.
 
@@ -52,7 +52,7 @@ The compress argument may be used to create a tar.bz2 otherwise it may be omitte
 
 The resulting build will be placed in the `builds` directory.
 
-A build will be unique to a Platform and bit version i.e. building on Windows 32 bit will not produce an app for a Linux distribution or Windows 64 bit. 
+A build will be unique to a Platform and bit version i.e. building on Windows 32 bit will not produce an app for a Linux or Windows 64 bit OS. 
 
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
